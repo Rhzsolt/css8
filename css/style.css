@@ -1,0 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url('../pics/bg-black.jpg');
+    font-family: 'Courier New', Courier, monospace;
+}
