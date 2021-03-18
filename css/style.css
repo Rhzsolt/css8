@@ -36,5 +36,5 @@ body{
     grid-column: span 3;
 }
 .grid1 .col-12{
-    grid-column: span 12;
+    grid-column: span 12 ;
 }
