@@ -38,3 +38,51 @@ body{
 .grid1 .col-12{
     grid-column: span 12 ;
 }
+.grid2{
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer"  ;
+}
+.grid2 .header {
+grid-area: header;
+/*a header megegyezik a fenti grid-template-areas: header névvel;*/
+}
+.grid2 .main {
+grid-area: main;
+}
+ .grid2 .sidebar {
+     grid-area: sidebar;
+ }
+ .grid2 .footer{
+grid-area: footer;
+ }
+ .grid3{
+    max-width: 1000px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-gap:10px }
+
+    .grid3 .col1{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .grid3 .col2{
+        grid-column-start: 3;
+        grid-column-end: 6;
+    }
+    .grid3 .col3{
+        /*grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;* röviden alatta */
+
+        grid-area: 2 / 1 / 4 / 3;
+    }
+    /*css grid generatorral könyebb*/
